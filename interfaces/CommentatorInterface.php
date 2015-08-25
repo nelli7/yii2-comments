@@ -28,4 +28,11 @@ interface CommentatorInterface
      * @return string|false
      */
     public function getCommentatorUrl();
+	
+	 /**
+     * @return string|false
+     */
+
+    public function getUserName($created_by);
+	
 }

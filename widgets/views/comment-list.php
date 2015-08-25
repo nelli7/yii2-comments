@@ -63,7 +63,8 @@ echo yii\widgets\ListView::widget([
 
                         if ($Author instanceof Comments\interfaces\CommentatorInterface) {
                             $avatar = $Author->getCommentatorAvatar();
-                            $name = $Author->getCommentatorName();
+                            // $name = $Author->getCommentatorName();
+                            $name=$Author->getUserName($Comment->created_by);
                             $name = empty($name) ? Yii::t('app', 'Unknown author') : $name;
                             $url = $Author->getCommentatorUrl();
                         }

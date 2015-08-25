@@ -27,6 +27,10 @@ class CommentListWidget extends \yii\base\Widget
 
     /** @var string */
     public $entity;
+	
+	/** @var int */
+	
+	public $created_by;
 
     /** @var string */
     public $anchorAfterUpdate = '#comment-%d';
