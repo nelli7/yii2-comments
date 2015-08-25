@@ -10,8 +10,7 @@
     }
   };
 
-  var $body = $('body'),
-    commentsData = [];
+  var commentsData = [];
 
   var methods = {
     init: function (comments) {
@@ -19,7 +18,7 @@
     }
   };
 
-  $body.on('click', '[data-role="reply"]', function (e) {
+  $('[data-role="reply"]').bind('click', function (e) {
     var comment_id = $(this).closest('[data-comment]').data('comment'),
       $textarea = $('textarea[data-role="new-comment"]');
 
@@ -28,12 +27,12 @@
       .val(blockquote(commentsData[comment_id].text));
 
     location.hash = null;
-    location.hash = 'commentcreateform?tab=comments';
+    location.hash = 'commentcreateform';
 
     e.preventDefault();
   });
 
-  $body.on('click', '[data-role="edit"]', function (e) {
+  $('[data-role="edit"]').bind('click', function (e) {
     var $link = $(this),
       $comment = $link.closest('[data-comment]'),
       comment_id = $comment.data('comment'),

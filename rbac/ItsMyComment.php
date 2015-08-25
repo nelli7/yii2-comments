@@ -2,14 +2,14 @@
 /**
  * ItsMyComment.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\rbac;
+namespace rmrevin\yii\module\Comments\rbac;
 
 /**
  * Class ItsMyComment
- * @package nelli7\yii\module\Comments\rbac
+ * @package rmrevin\yii\module\Comments\rbac
  */
 class ItsMyComment extends \yii\rbac\Rule
 {

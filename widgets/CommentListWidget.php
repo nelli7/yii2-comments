@@ -2,38 +2,30 @@
 /**
  * CommentListWidget.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\widgets;
+namespace rmrevin\yii\module\Comments\widgets;
 
-use nelli7\yii\module\Comments;
+use rmrevin\yii\module\Comments;
 
 /**
  * Class CommentListWidget
- * @package nelli7\yii\module\Comments\widgets
+ * @package rmrevin\yii\module\Comments\widgets
  */
 class CommentListWidget extends \yii\base\Widget
 {
-
-    /** @var string|null */
-    public $theme;
-
-    /** @var array */
-    public $viewParams = [];
 
     /** @var array */
     public $options = ['class' => 'comments-widget'];
 
     /** @var string */
     public $entity;
-	
-	/** @var int */
-	
-	public $created_by;
 
-    /** @var string */
-    public $anchorAfterUpdate = '#comment-%d';
+
+    /** @var int */
+    
+    public $created_by;
 
     /** @var array */
     public $pagination = [
@@ -87,10 +79,9 @@ class CommentListWidget extends \yii\base\Widget
             'sort' => $this->sort,
         ]);
 
-        $params = $this->viewParams;
-        $params['CommentsDataProvider'] = $CommentsDataProvider;
-
-        $content = $this->render('comment-list', $params);
+        $content = $this->render('comment-list', [
+            'CommentsDataProvider' => $CommentsDataProvider,
+        ]);
 
         return \yii\helpers\Html::tag('div', $content, $this->options);
     }
@@ -118,18 +109,6 @@ class CommentListWidget extends \yii\base\Widget
 
             $Comment->deleted = Comments\models\Comment::DELETED;
             $Comment->update();
-        }
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function getViewPath()
-    {
-        if (empty($this->theme)) {
-            return parent::getViewPath();
-        } else {
-            return \Yii::$app->getViewPath() . DIRECTORY_SEPARATOR . $this->theme;
         }
     }
 }

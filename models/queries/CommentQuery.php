@@ -2,16 +2,16 @@
 /**
  * CommentQuery.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\models\queries;
+namespace rmrevin\yii\module\Comments\models\queries;
 
-use nelli7\yii\module\Comments;
+use rmrevin\yii\module\Comments;
 
 /**
  * Class CommentQuery
- * @package nelli7\yii\module\Comments\models\queries
+ * @package rmrevin\yii\module\Comments\models\queries
  */
 class CommentQuery extends \yii\db\ActiveQuery
 {

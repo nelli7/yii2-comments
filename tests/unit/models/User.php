@@ -2,16 +2,16 @@
 /**
  * User.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\tests\unit\models;
+namespace rmrevin\yii\module\Comments\tests\unit\models;
 
-use nelli7\yii\module\Comments\interfaces\CommentatorInterface;
+use rmrevin\yii\module\Comments\interfaces\CommentatorInterface;
 
 /**
  * Class User
- * @package nelli7\yii\module\Comments\tests\unit\models
+ * @package rmrevin\yii\module\Comments\tests\unit\models
  */
 class User extends \yii\base\Model implements CommentatorInterface
 {

@@ -2,14 +2,14 @@
 /**
  * Module.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments;
+namespace rmrevin\yii\module\Comments;
 
 /**
  * Class Module
- * @package nelli7\yii\module\Comments
+ * @package rmrevin\yii\module\Comments
  */
 class Module extends \yii\base\Module
 {

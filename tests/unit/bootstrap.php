@@ -2,7 +2,7 @@
 /**
  * bootstrap.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
 define('YII_ENABLE_ERROR_HANDLER', true);

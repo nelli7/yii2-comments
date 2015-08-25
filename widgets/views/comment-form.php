@@ -2,13 +2,13 @@
 /**
  * comment-form.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  *
  * @var yii\web\View $this
  * @var Comments\forms\CommentCreateForm $CommentCreateForm
  */
 
-use nelli7\yii\module\Comments;
+use rmrevin\yii\module\Comments;
 use yii\helpers\Html;
 
 /** @var Comments\widgets\CommentFormWidget $Widget */

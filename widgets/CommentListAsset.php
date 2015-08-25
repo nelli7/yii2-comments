@@ -2,19 +2,19 @@
 /**
  * CommentListAsset.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\widgets;
+namespace rmrevin\yii\module\Comments\widgets;
 
 /**
  * Class CommentListAsset
- * @package nelli7\yii\module\Comments\widgets
+ * @package rmrevin\yii\module\Comments\widgets
  */
 class CommentListAsset extends \yii\web\AssetBundle
 {
 
-    public $sourcePath = '@vendor/nelli7/yii2-comments/widgets/_assets';
+    public $sourcePath = '@vendor/rmrevin/yii2-comments/widgets/_assets';
 
     public $css = [
         'comment-list.css',

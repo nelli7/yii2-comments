@@ -2,31 +2,25 @@
 /**
  * CommentFormWidget.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\widgets;
+namespace rmrevin\yii\module\Comments\widgets;
 
-use nelli7\yii\module\Comments;
+use rmrevin\yii\module\Comments;
 
 /**
  * Class CommentFormWidget
- * @package nelli7\yii\module\Comments\widgets
+ * @package rmrevin\yii\module\Comments\widgets
  */
 class CommentFormWidget extends \yii\base\Widget
 {
-
-    /** @var string|null */
-    public $theme;
 
     /** @var string */
     public $entity;
 
     /** @var Comments\models\Comment */
     public $Comment;
-
-    /** @var string */
-    public $anchor = '#comment-%d';
 
     /**
      * @inheritdoc
@@ -44,7 +38,7 @@ class CommentFormWidget extends \yii\base\Widget
             if ($CommentCreateForm->validate()) {
                 if ($CommentCreateForm->save()) {
                     \Yii::$app->getResponse()
-                        ->refresh(sprintf($this->anchor, $CommentCreateForm->Comment->id))
+                        ->refresh('#comment-' . $CommentCreateForm->Comment->id)
                         ->send();
 
                     exit;
@@ -55,17 +49,5 @@ class CommentFormWidget extends \yii\base\Widget
         return $this->render('comment-form', [
             'CommentCreateForm' => $CommentCreateForm,
         ]);
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function getViewPath()
-    {
-        if (empty($this->theme)) {
-            return parent::getViewPath();
-        } else {
-            return \Yii::$app->getViewPath() . DIRECTORY_SEPARATOR . $this->theme;
-        }
     }
 }

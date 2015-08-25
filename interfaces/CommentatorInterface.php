@@ -2,14 +2,14 @@
 /**
  * CommentatorInterface.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\interfaces;
+namespace rmrevin\yii\module\Comments\interfaces;
 
 /**
  * Interface CommentatorInterface
- * @package nelli7\yii\module\Comments\interfaces
+ * @package rmrevin\yii\module\Comments\interfaces
  */
 interface CommentatorInterface
 {
@@ -28,11 +28,8 @@ interface CommentatorInterface
      * @return string|false
      */
     public function getCommentatorUrl();
-	
-	 /**
+    /**
      * @return string|false
      */
-
     public function getUserName($created_by);
-	
 }

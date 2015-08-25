@@ -2,14 +2,14 @@
 /**
  * comment-list.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  *
  * @var yii\web\View $this
  * @var yii\data\ActiveDataProvider $CommentsDataProvider
  */
 
-use nelli7\yii\fontawesome\FA;
-use nelli7\yii\module\Comments;
+use rmrevin\yii\fontawesome\FA;
+use rmrevin\yii\module\Comments;
 use yii\helpers\Html;
 use yii\helpers\Json;
 
@@ -124,7 +124,6 @@ echo yii\widgets\ListView::widget([
                             echo Comments\widgets\CommentFormWidget::widget([
                                 'entity' => $CommentListWidget->entity,
                                 'Comment' => $Comment,
-                                'anchor' => $CommentListWidget->anchorAfterUpdate,
                             ]);
                             ?>
                         </div>
@@ -134,12 +133,10 @@ echo yii\widgets\ListView::widget([
                     <div class="actions">
                         <?php
                         if (!$Comment->isDeleted()) {
-                            if ($Comment->canCreate()) {
-                                echo Html::a(FA::icon('reply') . ' ' . Yii::t('app', 'Reply'), '#', [
-                                    'class' => 'btn btn-info btn-xs',
-                                    'data-role' => 'reply',
-                                ]);
-                            }
+                            echo Html::a(FA::icon('reply') . ' ' . Yii::t('app', 'Reply'), '#', [
+                                'class' => 'btn btn-info btn-xs',
+                                'data-role' => 'reply',
+                            ]);
 
                             if ($Comment->canUpdate()) {
                                 echo Html::a(
@@ -174,10 +171,8 @@ if ($CommentListWidget->showCreateForm && Comments\models\Comment::canCreate()) 
     echo Html::tag('h3', Yii::t('app', 'Add comment'), ['class' => 'comment-title']);
 
     echo Comments\widgets\CommentFormWidget::widget([
-        'theme' => $CommentListWidget->theme,
         'entity' => $CommentListWidget->entity,
         'Comment' => new Comments\models\Comment(),
-        'anchor' => $CommentListWidget->anchorAfterUpdate,
     ]);
 }
 

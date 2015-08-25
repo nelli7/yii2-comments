@@ -2,16 +2,16 @@
 /**
  * MainTest.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\tests\unit\comments;
+namespace rmrevin\yii\module\Comments\tests\unit\comments;
 
-use nelli7\yii\module\Comments;
+use rmrevin\yii\module\Comments;
 
 /**
  * Class MainTest
- * @package nelli7\yii\fontawesome\tests\unit\fontawesome
+ * @package rmrevin\yii\fontawesome\tests\unit\fontawesome
  */
 class MainTest extends Comments\tests\unit\TestCase
 {
@@ -21,7 +21,7 @@ class MainTest extends Comments\tests\unit\TestCase
         /** @var Comments\Module $Module */
         $Module = \Yii::$app->getModule('comments');
 
-        $this->assertInstanceOf('nelli7\yii\module\Comments\Module', $Module);
-        $this->assertEquals('nelli7\yii\module\Comments\tests\unit\models\User', $Module->userIdentityClass);
+        $this->assertInstanceOf('rmrevin\yii\module\Comments\Module', $Module);
+        $this->assertEquals('rmrevin\yii\module\Comments\tests\unit\models\User', $Module->userIdentityClass);
     }
 }

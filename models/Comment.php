@@ -2,16 +2,16 @@
 /**
  * Comment.php
  * @author Revin Roman
- * @link https://nelli7.ru
+ * @link https://rmrevin.ru
  */
 
-namespace nelli7\yii\module\Comments\models;
+namespace rmrevin\yii\module\Comments\models;
 
-use nelli7\yii\module\Comments;
+use rmrevin\yii\module\Comments;
 
 /**
  * Class Comment
- * @package nelli7\yii\module\Comments\models
+ * @package rmrevin\yii\module\Comments\models
  *
  * @property integer $id
  * @property string $entity
