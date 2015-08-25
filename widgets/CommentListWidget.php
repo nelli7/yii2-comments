@@ -2,16 +2,16 @@
 /**
  * CommentListWidget.php
  * @author Revin Roman
- * @link https://rmrevin.ru
+ * @link https://nelli7.ru
  */
 
-namespace rmrevin\yii\module\Comments\widgets;
+namespace nelli7\yii\module\Comments\widgets;
 
-use rmrevin\yii\module\Comments;
+use nelli7\yii\module\Comments;
 
 /**
  * Class CommentListWidget
- * @package rmrevin\yii\module\Comments\widgets
+ * @package nelli7\yii\module\Comments\widgets
  */
 class CommentListWidget extends \yii\base\Widget
 {

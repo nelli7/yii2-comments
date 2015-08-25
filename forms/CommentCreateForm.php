@@ -2,16 +2,16 @@
 /**
  * CommentCreateForm.php
  * @author Revin Roman
- * @link https://rmrevin.ru
+ * @link https://nelli7.ru
  */
 
-namespace rmrevin\yii\module\Comments\forms;
+namespace nelli7\yii\module\Comments\forms;
 
-use rmrevin\yii\module\Comments;
+use nelli7\yii\module\Comments;
 
 /**
  * Class CommentCreateForm
- * @package rmrevin\yii\module\Comments\forms
+ * @package nelli7\yii\module\Comments\forms
  */
 class CommentCreateForm extends \yii\base\Model
 {

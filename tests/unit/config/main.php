@@ -9,8 +9,8 @@ return [
     'basePath' => realpath(__DIR__ . '/..'),
     'modules' => [
         'comments' => [
-            'class' => 'rmrevin\yii\module\Comments\Module',
-            'userIdentityClass' => 'rmrevin\yii\module\Comments\tests\unit\models\User',
+            'class' => 'nelli7\yii\module\Comments\Module',
+            'userIdentityClass' => 'nelli7\yii\module\Comments\tests\unit\models\User',
         ],
     ]
 ];

@@ -305,16 +305,16 @@
             "time": "2013-11-30 08:25:19"
         },
         {
-            "name": "rmrevin/yii2-fontawesome",
+            "name": "nelli7/yii2-fontawesome",
             "version": "2.10.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rmrevin/yii2-fontawesome.git",
+                "url": "https://github.com/nelli7/yii2-fontawesome.git",
                 "reference": "0e458f209b683de7c3056261c7332f55785b072f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/0e458f209b683de7c3056261c7332f55785b072f",
+                "url": "https://api.github.com/repos/nelli7/yii2-fontawesome/zipball/0e458f209b683de7c3056261c7332f55785b072f",
                 "reference": "0e458f209b683de7c3056261c7332f55785b072f",
                 "shasum": ""
             },
@@ -332,7 +332,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "rmrevin\\yii\\fontawesome\\": ""
+                    "nelli7\\yii\\fontawesome\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -343,7 +343,7 @@
                 {
                     "name": "Roman Revin",
                     "email": "xgismox@gmail.com",
-                    "homepage": "http://rmrevin.ru/"
+                    "homepage": "http://nelli7.ru/"
                 }
             ],
             "description": "Asset Bundle for Yii2 with Font Awesome",

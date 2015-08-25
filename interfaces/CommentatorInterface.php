@@ -2,14 +2,14 @@
 /**
  * CommentatorInterface.php
  * @author Revin Roman
- * @link https://rmrevin.ru
+ * @link https://nelli7.ru
  */
 
-namespace rmrevin\yii\module\Comments\interfaces;
+namespace nelli7\yii\module\Comments\interfaces;
 
 /**
  * Interface CommentatorInterface
- * @package rmrevin\yii\module\Comments\interfaces
+ * @package nelli7\yii\module\Comments\interfaces
  */
 interface CommentatorInterface
 {

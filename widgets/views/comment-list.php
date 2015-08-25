@@ -2,14 +2,14 @@
 /**
  * comment-list.php
  * @author Revin Roman
- * @link https://rmrevin.ru
+ * @link https://nelli7.ru
  *
  * @var yii\web\View $this
  * @var yii\data\ActiveDataProvider $CommentsDataProvider
  */
 
-use rmrevin\yii\fontawesome\FA;
-use rmrevin\yii\module\Comments;
+use nelli7\yii\fontawesome\FA;
+use nelli7\yii\module\Comments;
 use yii\helpers\Html;
 use yii\helpers\Json;
 
